@@ -1,0 +1,31 @@
+import estudiante.*
+import materia.*
+import materiaAprobada.*
+import carrera.*
+
+describe "Materias" {
+    // Programacion
+    const Objetos1 = new Materia(correlativas = #{}, cupos = 5)
+    const Objetos2 = new Materia(correlativas = #{Objetos1, Matematica1}, cupos = 5)
+    const Objetos3 = new Materia(correlativas = #{Objetos2, BaseDeDatos}, cupos = 5)
+    
+    const BaseDeDatos = new Materia(correlativas = #{}, cupos = 5)
+
+    const ProgramacionConcurrente = new Materia(correlativas = #{Objetos1, BaseDeDatos}, cupos = 5)
+    
+    const Matematica1 = new Materia(correlativas = #{}, cupos = 5)
+
+    const ElementosDeProgramacion = new Materia(correlativas = #{}, cupos = 5)
+
+    // Medicina
+
+    const Biologia1 = new Materia(correlativas = #{}, cupos = 5)
+    const Biologia2 = new Materia(correlativas = #{Biologia1}, cupos = 5)
+
+    // Carreras
+
+
+    // Roque
+    const Roque = new Estudiante(nombre = Roque, )
+    
+}
